@@ -55,7 +55,7 @@ class TodoCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Title and Badge
+                   
                     Row(
                       children: [
                         Expanded(
@@ -117,7 +117,7 @@ class TodoCard extends StatelessWidget {
                     
                     const SizedBox(height: 12),
                     
-                    // Footer: Date and Delete
+                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -152,7 +152,7 @@ class TodoCard extends StatelessWidget {
                           ),
                         ),
                         
-                        // Delete Button
+                     
                         if (onDelete != null)
                           IconButton(
                             icon: const Icon(Icons.delete_outline),
