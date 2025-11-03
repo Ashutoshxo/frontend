@@ -5,7 +5,7 @@ import '../Models/todo.dart';
 class ApiService {
   static const String baseUrl = 'http://10.0.2.2:8000';
 
-  // Get all todos
+  
   static Future<List<Todo>> fetchTodos() async {
     try {
       final response = await http.get(
@@ -26,7 +26,7 @@ class ApiService {
     }
   }
 
-  // Add new todo
+
   static Future<Todo> createTodo({
     required String title,
     required String description,
@@ -54,7 +54,7 @@ class ApiService {
     }
   }
 
-  // Delete todo
+ 
   static Future<void> deleteTodo(int id) async {
     try {
       final response = await http.delete(
@@ -70,7 +70,7 @@ class ApiService {
     }
   }
 
-  // Update todo (optional - for marking as done)
+
   static Future<Todo> updateTodo({
     required int id,
     required String title,
