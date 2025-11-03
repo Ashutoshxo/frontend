@@ -158,7 +158,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         foregroundColor: Colors.white,
         elevation: 0,
         actions: [
-          // Search Icon
+          
           IconButton(
             icon: const Icon(Icons.search),
             onPressed: () {
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
               );
             },
           ),
-          // Refresh Icon
+          /
           IconButton(
             icon: const Icon(Icons.refresh),
             onPressed: fetchData,
@@ -246,10 +246,10 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           ? const Center(child: CircularProgressIndicator())
           : Column(
               children: [
-                // Stats Card
+                
                 _buildStatsCard(),
                 
-                // Tab Views
+                
                 Expanded(
                   child: TabBarView(
                     controller: _tabController,
@@ -271,7 +271,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     );
   }
 
-  // Stats Card Widget
+
   Widget _buildStatsCard() {
     final total = todos.length;
     final completed = _completedTodos.length;
@@ -397,7 +397,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           return TodoCard(
             todo: todo,
             onTap: () {
-              // Todo detail view (implement later)
+            
               print('Tapped: ${todo.title}');
             },
             onDelete: () => _deleteTodo(todo.id, todo.title),
