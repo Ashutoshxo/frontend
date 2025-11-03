@@ -70,4 +70,6 @@ The app allows users to create, manage, and track todos with a clean UI and real
 ✅ JSON responses optimized for Flutter integration  
 ✅ CORS enabled for mobile connection  
 
-Example endpoint:
+The Backend for this project is built with Flutter. Check it out here: https://github.com/Ashutoshxo/backend
+
+➡️ Backend Repository
